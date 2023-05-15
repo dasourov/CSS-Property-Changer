@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Property Changer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container vertical">
+        <h1>Position-Y</h1>
+        <br />
+        <span>0</span>
+        <input type="range" id="position-y" min="0" max="500" value="0" />
+
+        <label for="position-y">
+          <span>500</span>
+        </label>
+      </div>
+      <div class="input-container horizontal">
+        <h1>Position-X</h1>
+        <br />
+        <span>0</span>
+        <input type="range" id="position-x" min="0" max="500" value="0" />
+        <span>500</span>
+      </div>
+
+      <div class="shape">
+        <h1>Shape Selector</h1>
+        <select name="" id="happy">
+          <option value="1">Square</option>
+          <option value="2">Round</option>
+        </select>
+        <button id="okay-btn">Submit</button>
+      </div>
+
+      <div class="sizeChange">
+        <h1>Size Changer</h1>
+        <span>0</span>
+        <input
+          type="range"
+          id="sizeChange"
+          min="0"
+          max="2"
+          step="0.1"
+          value="1"
+        />
+        <span>2</span>
+      </div>
+      <div class="rgba">
+        <span>r</span>
+        <input type="range" id="r" value="0" min="0" max="255" />
+        <span>g</span>
+        <input type="range" id="g" value="0" min="0" max="255" />
+        <span>b</span>
+        <input type="range" id="b" value="0" min="0" max="255" />
+        <span>a</span>
+        <input type="range" id="a" value="1" min="0" max="1" step="0.1" />
+      </div>
+    </div>
+
+    <div class="block"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
